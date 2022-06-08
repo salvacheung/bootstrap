@@ -16,5 +16,8 @@
       color: color-contrast($value) if($enable-important-utilities, !important, null);
       background-color: RGBA($color-rgb, var(--#{$prefix}bg-opacity, 1)) if($enable-important-utilities, !important, null);
     }
+    .bg-#{$color} {
+      background-color: $value;
+    }
   }
 }
