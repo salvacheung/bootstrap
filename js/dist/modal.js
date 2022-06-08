@@ -52,13 +52,13 @@
   const SELECTOR_DATA_TOGGLE = '[data-bs-toggle="modal"]';
   const Default = {
     backdrop: true,
-    keyboard: true,
-    focus: true
+    focus: true,
+    keyboard: true
   };
   const DefaultType = {
     backdrop: '(boolean|string)',
-    keyboard: 'boolean',
-    focus: 'boolean'
+    focus: 'boolean',
+    keyboard: 'boolean'
   };
   /**
    * Class definition

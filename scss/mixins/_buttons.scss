@@ -21,6 +21,7 @@
   --#{$prefix}btn-color: #{$color};
   --#{$prefix}btn-bg: #{$background};
   --#{$prefix}btn-border-color: #{$border};
+  --#{$prefix}btn-box-shadow: 0 2px 6px 0 rgba(#{to-rgb($background)}, .5);
   --#{$prefix}btn-hover-color: #{$hover-color};
   --#{$prefix}btn-hover-bg: #{$hover-background};
   --#{$prefix}btn-hover-border-color: #{$hover-border};

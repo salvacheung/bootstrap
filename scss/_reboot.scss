@@ -87,22 +87,22 @@ hr {
   font-style: $headings-font-style;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
-  color: var(--#{$prefix}heading-color);
+  color: $heading-color;
 }
 
 h1 {
   @extend %heading;
-  @include font-size($h1-font-size);
+  @include font-size(calc(#{$h1-font-size} + 1.2vw));
 }
 
 h2 {
   @extend %heading;
-  @include font-size($h2-font-size);
+  @include font-size(calc(#{$h2-font-size} + .75vw));
 }
 
 h3 {
   @extend %heading;
-  @include font-size($h3-font-size);
+  @include font-size(calc(#{$h2-font-size} + .3vw));
 }
 
 h4 {

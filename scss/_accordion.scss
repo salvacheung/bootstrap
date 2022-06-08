@@ -4,6 +4,8 @@
 
 .accordion {
   // scss-docs-start accordion-css-vars
+  --#{$prefix}accordion-title-color: #{$accordion-title-color};
+  --#{$prefix}accordion-title-hover-color: #{$accordion-title-hover-color};
   --#{$prefix}accordion-color: #{color-contrast($accordion-bg)};
   --#{$prefix}accordion-bg: #{$accordion-bg};
   --#{$prefix}accordion-transition: #{$accordion-transition};
@@ -27,6 +29,20 @@
   --#{$prefix}accordion-active-color: #{$accordion-button-active-color};
   --#{$prefix}accordion-active-bg: #{$accordion-button-active-bg};
   // scss-docs-end accordion-css-vars
+
+  .card{
+    .card-header{
+      margin-bottom: -1px;
+    }
+  }
+}
+.accordion-title{
+  position: relative;
+  color: var(--#{$prefix}accordion-title-color);
+
+  &:hover{
+    color: var(--#{$prefix}accordion-title-hover-color);
+  }
 }
 
 .accordion-button {
