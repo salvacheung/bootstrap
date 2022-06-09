@@ -26,6 +26,13 @@
 }
 
 
+.bi-start {
+  margin-right: $bi-margin;
+}
+.bi-end {
+  margin-left: $bi-margin;
+}
+
 .lead {
   @include font-size($lead-font-size);
   font-weight: $lead-font-weight;

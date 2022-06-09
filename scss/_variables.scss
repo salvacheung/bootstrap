@@ -36,6 +36,7 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
+$scot:    #2C405A !default;
 $slate:   #64748b !default;
 $zinc:    #71717a !default;
 $neutral: #737373 !default;
@@ -59,6 +60,7 @@ $cyan:    #39afd1 !default;
 
 // scss-docs-start colors-map
 $colors: (
+  "scot":       $scot,
   "slate":      $slate,
   "zinc":       $zinc,
   "neutral":    $neutral,
@@ -94,6 +96,18 @@ $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
 
 // fusv-disable
+$scot-50:  #e6e8eb !default;
+$scot-100: #c0c6ce !default;
+$scot-200: #96a0ad !default;
+$scot-300: #6b798c !default;
+$scot-400: #4c5d73 !default;
+$scot-500: $scot !default;
+$scot-600: #273a52 !default;
+$scot-700: #213248 !default;
+$scot-800: #1b2a3f !default;
+$scot-900: #101c2e !default;
+
+$rose-50:  tint-color($rose, 90%) !default;
 $rose-100: tint-color($rose, 80%) !default;
 $rose-200: tint-color($rose, 60%) !default;
 $rose-300: tint-color($rose, 40%) !default;
@@ -104,6 +118,7 @@ $rose-700: shade-color($rose, 40%) !default;
 $rose-800: shade-color($rose, 60%) !default;
 $rose-900: shade-color($rose, 80%) !default;
 
+$sky-50: tint-color($sky, 90%) !default;
 $sky-100: tint-color($sky, 80%) !default;
 $sky-200: tint-color($sky, 60%) !default;
 $sky-300: tint-color($sky, 40%) !default;
@@ -114,6 +129,7 @@ $sky-700: shade-color($sky, 40%) !default;
 $sky-800: shade-color($sky, 60%) !default;
 $sky-900: shade-color($sky, 80%) !default;
 
+$emerald-50:  tint-color($emerald, 90%) !default;
 $emerald-100: tint-color($emerald, 80%) !default;
 $emerald-200: tint-color($emerald, 60%) !default;
 $emerald-300: tint-color($emerald, 40%) !default;
@@ -124,6 +140,7 @@ $emerald-700: shade-color($emerald, 40%) !default;
 $emerald-800: shade-color($emerald, 60%) !default;
 $emerald-900: shade-color($emerald, 80%) !default;
 
+$lime-50:  tint-color($lime, 90%) !default;
 $lime-100: tint-color($lime, 80%) !default;
 $lime-200: tint-color($lime, 60%) !default;
 $lime-300: tint-color($lime, 40%) !default;
@@ -134,6 +151,7 @@ $lime-700: shade-color($lime, 40%) !default;
 $lime-800: shade-color($lime, 60%) !default;
 $lime-900: shade-color($lime, 80%) !default;
 
+$amber-50:  tint-color($amber, 90%) !default;
 $amber-100: tint-color($amber, 80%) !default;
 $amber-200: tint-color($amber, 60%) !default;
 $amber-300: tint-color($amber, 40%) !default;
@@ -144,6 +162,7 @@ $amber-700: shade-color($amber, 40%) !default;
 $amber-800: shade-color($amber, 60%) !default;
 $amber-900: shade-color($amber, 80%) !default;
 
+$stone-50:  tint-color($stone, 90%) !default;
 $stone-100: tint-color($stone, 80%) !default;
 $stone-200: tint-color($stone, 60%) !default;
 $stone-300: tint-color($stone, 40%) !default;
@@ -154,6 +173,7 @@ $stone-700: shade-color($stone, 40%) !default;
 $stone-800: shade-color($stone, 60%) !default;
 $stone-900: shade-color($stone, 80%) !default;
 
+$neutral-50:  tint-color($neutral, 90%) !default;
 $neutral-100: tint-color($neutral, 80%) !default;
 $neutral-200: tint-color($neutral, 60%) !default;
 $neutral-300: tint-color($neutral, 40%) !default;
@@ -164,6 +184,7 @@ $neutral-700: shade-color($neutral, 40%) !default;
 $neutral-800: shade-color($neutral, 60%) !default;
 $neutral-900: shade-color($neutral, 80%) !default;
 
+$zinc-50:  tint-color($zinc, 90%) !default;
 $zinc-100: tint-color($zinc, 80%) !default;
 $zinc-200: tint-color($zinc, 60%) !default;
 $zinc-300: tint-color($zinc, 40%) !default;
@@ -174,6 +195,7 @@ $zinc-700: shade-color($zinc, 40%) !default;
 $zinc-800: shade-color($zinc, 60%) !default;
 $zinc-900: shade-color($zinc, 80%) !default;
 
+$slate-50:  tint-color($slate, 90%) !default;
 $slate-100: tint-color($slate, 80%) !default;
 $slate-200: tint-color($slate, 60%) !default;
 $slate-300: tint-color($slate, 40%) !default;
@@ -184,6 +206,7 @@ $slate-700: shade-color($slate, 40%) !default;
 $slate-800: shade-color($slate, 60%) !default;
 $slate-900: shade-color($slate, 80%) !default;
 
+$blue-50:  tint-color($blue, 90%) !default;
 $blue-100: tint-color($blue, 80%) !default;
 $blue-200: tint-color($blue, 60%) !default;
 $blue-300: tint-color($blue, 40%) !default;
@@ -194,6 +217,7 @@ $blue-700: shade-color($blue, 40%) !default;
 $blue-800: shade-color($blue, 60%) !default;
 $blue-900: shade-color($blue, 80%) !default;
 
+$indigo-50:  tint-color($indigo, 90%) !default;
 $indigo-100: tint-color($indigo, 80%) !default;
 $indigo-200: tint-color($indigo, 60%) !default;
 $indigo-300: tint-color($indigo, 40%) !default;
@@ -204,6 +228,7 @@ $indigo-700: shade-color($indigo, 40%) !default;
 $indigo-800: shade-color($indigo, 60%) !default;
 $indigo-900: shade-color($indigo, 80%) !default;
 
+$purple-50:  tint-color($purple, 90%) !default;
 $purple-100: tint-color($purple, 80%) !default;
 $purple-200: tint-color($purple, 60%) !default;
 $purple-300: tint-color($purple, 40%) !default;
@@ -214,6 +239,7 @@ $purple-700: shade-color($purple, 40%) !default;
 $purple-800: shade-color($purple, 60%) !default;
 $purple-900: shade-color($purple, 80%) !default;
 
+$pink-50:  tint-color($pink, 90%) !default;
 $pink-100: tint-color($pink, 80%) !default;
 $pink-200: tint-color($pink, 60%) !default;
 $pink-300: tint-color($pink, 40%) !default;
@@ -224,6 +250,7 @@ $pink-700: shade-color($pink, 40%) !default;
 $pink-800: shade-color($pink, 60%) !default;
 $pink-900: shade-color($pink, 80%) !default;
 
+$red-50:  tint-color($red, 90%) !default;
 $red-100: tint-color($red, 80%) !default;
 $red-200: tint-color($red, 60%) !default;
 $red-300: tint-color($red, 40%) !default;
@@ -234,6 +261,7 @@ $red-700: shade-color($red, 40%) !default;
 $red-800: shade-color($red, 60%) !default;
 $red-900: shade-color($red, 80%) !default;
 
+$orange-50:  tint-color($orange, 90%) !default;
 $orange-100: tint-color($orange, 80%) !default;
 $orange-200: tint-color($orange, 60%) !default;
 $orange-300: tint-color($orange, 40%) !default;
@@ -244,6 +272,7 @@ $orange-700: shade-color($orange, 40%) !default;
 $orange-800: shade-color($orange, 60%) !default;
 $orange-900: shade-color($orange, 80%) !default;
 
+$yellow-50:  tint-color($yellow, 90%) !default;
 $yellow-100: tint-color($yellow, 80%) !default;
 $yellow-200: tint-color($yellow, 60%) !default;
 $yellow-300: tint-color($yellow, 40%) !default;
@@ -254,6 +283,7 @@ $yellow-700: shade-color($yellow, 40%) !default;
 $yellow-800: shade-color($yellow, 60%) !default;
 $yellow-900: shade-color($yellow, 80%) !default;
 
+$green-50:  tint-color($green, 90%) !default;
 $green-100: tint-color($green, 80%) !default;
 $green-200: tint-color($green, 60%) !default;
 $green-300: tint-color($green, 40%) !default;
@@ -264,6 +294,7 @@ $green-700: shade-color($green, 40%) !default;
 $green-800: shade-color($green, 60%) !default;
 $green-900: shade-color($green, 80%) !default;
 
+$teal-50:  tint-color($teal, 90%) !default;
 $teal-100: tint-color($teal, 80%) !default;
 $teal-200: tint-color($teal, 60%) !default;
 $teal-300: tint-color($teal, 40%) !default;
@@ -274,6 +305,7 @@ $teal-700: shade-color($teal, 40%) !default;
 $teal-800: shade-color($teal, 60%) !default;
 $teal-900: shade-color($teal, 80%) !default;
 
+$cyan-50:  tint-color($cyan, 90%) !default;
 $cyan-100: tint-color($cyan, 80%) !default;
 $cyan-200: tint-color($cyan, 60%) !default;
 $cyan-300: tint-color($cyan, 40%) !default;
@@ -284,7 +316,21 @@ $cyan-700: shade-color($cyan, 40%) !default;
 $cyan-800: shade-color($cyan, 60%) !default;
 $cyan-900: shade-color($cyan, 80%) !default;
 
+$scots: (
+  "scot-50":  $scot-50,
+  "scot-100": $scot-100,
+  "scot-200": $scot-200,
+  "scot-300": $scot-300,
+  "scot-400": $scot-400,
+  "scot-500": $scot-500,
+  "scot-600": $scot-600,
+  "scot-700": $scot-700,
+  "scot-800": $scot-800,
+  "scot-900": $scot-900
+) !default;
+
 $skys: (
+  "sky-50":  $sky-50,
   "sky-100": $sky-100,
   "sky-200": $sky-200,
   "sky-300": $sky-300,
@@ -297,6 +343,7 @@ $skys: (
 ) !default;
 
 $emeralds: (
+  "emerald-50":  $emerald-50,
   "emerald-100": $emerald-100,
   "emerald-200": $emerald-200,
   "emerald-300": $emerald-300,
@@ -309,6 +356,7 @@ $emeralds: (
 ) !default;
 
 $limes: (
+  "lime-50":  $lime-50,
   "lime-100": $lime-100,
   "lime-200": $lime-200,
   "lime-300": $lime-300,
@@ -321,6 +369,7 @@ $limes: (
 ) !default;
 
 $ambers: (
+  "amber-50":  $amber-50,
   "amber-100": $amber-100,
   "amber-200": $amber-200,
   "amber-300": $amber-300,
@@ -333,6 +382,7 @@ $ambers: (
 ) !default;
 
 $stones: (
+  "stone-50":  $stone-50,
   "stone-100": $stone-100,
   "stone-200": $stone-200,
   "stone-300": $stone-300,
@@ -345,6 +395,7 @@ $stones: (
 ) !default;
 
 $neutrals: (
+  "neutral-50":  $neutral-50,
   "neutral-100": $neutral-100,
   "neutral-200": $neutral-200,
   "neutral-300": $neutral-300,
@@ -357,6 +408,7 @@ $neutrals: (
 ) !default;
 
 $zincs: (
+  "zinc-50":  $zinc-50,
   "zinc-100": $zinc-100,
   "zinc-200": $zinc-200,
   "zinc-300": $zinc-300,
@@ -369,6 +421,7 @@ $zincs: (
 ) !default;
 
 $slates: (
+  "slate-50":  $slate-50,
   "slate-100": $slate-100,
   "slate-200": $slate-200,
   "slate-300": $slate-300,
@@ -381,6 +434,7 @@ $slates: (
 ) !default;
 
 $roses: (
+  "rose-50":  $rose-50,
   "rose-100": $rose-100,
   "rose-200": $rose-200,
   "rose-300": $rose-300,
@@ -393,6 +447,7 @@ $roses: (
 ) !default;
 
 $blues: (
+  "blue-50":  $blue-50,
   "blue-100": $blue-100,
   "blue-200": $blue-200,
   "blue-300": $blue-300,
@@ -405,6 +460,7 @@ $blues: (
 ) !default;
 
 $indigos: (
+  "indigo-50":  $indigo-50,
   "indigo-100": $indigo-100,
   "indigo-200": $indigo-200,
   "indigo-300": $indigo-300,
@@ -417,6 +473,7 @@ $indigos: (
 ) !default;
 
 $purples: (
+  "purple-50":  $purple-50,
   "purple-100": $purple-100,
   "purple-200": $purple-200,
   "purple-300": $purple-300,
@@ -429,6 +486,7 @@ $purples: (
 ) !default;
 
 $pinks: (
+  "pink-50":  $pink-50,
   "pink-100": $pink-100,
   "pink-200": $pink-200,
   "pink-300": $pink-300,
@@ -441,6 +499,7 @@ $pinks: (
 ) !default;
 
 $reds: (
+  "red-50":  $red-50,
   "red-100": $red-100,
   "red-200": $red-200,
   "red-300": $red-300,
@@ -453,6 +512,7 @@ $reds: (
 ) !default;
 
 $oranges: (
+  "orange-50":  $orange-50,
   "orange-100": $orange-100,
   "orange-200": $orange-200,
   "orange-300": $orange-300,
@@ -465,6 +525,7 @@ $oranges: (
 ) !default;
 
 $yellows: (
+  "yellow-50":  $yellow-50,
   "yellow-100": $yellow-100,
   "yellow-200": $yellow-200,
   "yellow-300": $yellow-300,
@@ -477,6 +538,7 @@ $yellows: (
 ) !default;
 
 $greens: (
+  "green-50":  $green-50,
   "green-100": $green-100,
   "green-200": $green-200,
   "green-300": $green-300,
@@ -489,6 +551,7 @@ $greens: (
 ) !default;
 
 $teals: (
+  "teal-50":  $teal-50,
   "teal-100": $teal-100,
   "teal-200": $teal-200,
   "teal-300": $teal-300,
@@ -501,6 +564,7 @@ $teals: (
 ) !default;
 
 $cyans: (
+  "cyan-50":  $cyan-50,
   "cyan-100": $cyan-100,
   "cyan-200": $cyan-200,
   "cyan-300": $cyan-300,
@@ -515,6 +579,7 @@ $cyans: (
 
 // scss-docs-start color-names
 $color-names: (
+  "scot": $scots,
   "slate": $slates,
   "zinc": $zincs,
   "Neutral": $neutrals,
@@ -538,7 +603,7 @@ $color-names: (
 // scss-docs-end color-names
 
 // scss-docs-start theme-color-variables
-$primary:       $indigo !default;
+$primary:       $blue !default;
 $secondary:     $gray-700 !default;
 $success:       $green !default;
 $info:          $purple !default;
@@ -818,9 +883,9 @@ $line-height-lg:              2 !default;
 $h1-font-size:                $font-size-base * 1.35 !default;
 $h2-font-size:                $font-size-base * 1.3125 !default;
 $h3-font-size:                $font-size-base * 1.125 !default;
-$h4-font-size:                $font-size-base * 1.125 !default;
-$h5-font-size:                $font-size-base * .9375 !default;
-$h6-font-size:                $font-size-base * .75 !default;
+$h4-font-size:                $font-size-base * 1 !default;
+$h5-font-size:                $font-size-base * .8125 !default;
+$h6-font-size:                $font-size-base * .6 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -1303,8 +1368,8 @@ $zindex-toast:                      1090 !default;
 // Navs
 
 // scss-docs-start nav-variables
-$nav-link-padding-y:                .5rem !default;
-$nav-link-padding-x:                1rem !default;
+$nav-link-padding-y:                $font-size-base * 1.5 !default;
+$nav-link-padding-x:                $font-size-base * 1.5 !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
 $nav-link-color:                    var(--#{$prefix}link-color) !default;
@@ -1329,10 +1394,10 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y:                  $spacer * .5 !default;
+$navbar-padding-y:                  0 !default;
 $navbar-padding-x:                  null !default;
 
-$navbar-nav-link-padding-x:         .5rem !default;
+$navbar-nav-link-padding-x:         $font-size-base * 1 !default;
 
 $navbar-brand-font-size:            $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
@@ -1350,16 +1415,18 @@ $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 // scss-docs-end navbar-variables
 
 // scss-docs-start navbar-theme-variables
-$navbar-dark-color:                 rgba($white, .55) !default;
-$navbar-dark-hover-color:           rgba($white, .75) !default;
+$navbar-dark-color:                 rgba($white, .85) !default;
+$navbar-dark-hover-color:           rgba($white, 1) !default;
 $navbar-dark-active-color:          $white !default;
+$navbar-dark-active-bg-color:       rgba($white, .1) !default;
 $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
 $navbar-light-color:                rgba($black, .55) !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         rgba($black, .9) !default;
+$navbar-light-hover-color:          $blue-500 !default;
+$navbar-light-active-color:         $blue-500 !default;
+$navbar-light-active-bg-color:      $blue-50 !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: rgba($black, .1) !default;
@@ -1385,23 +1452,22 @@ $dropdown-color:                    $gray-700 !default;
 $dropdown-bg:                       $white !default;
 $dropdown-border-color:             #e7ebf0 !default;
 $dropdown-border-radius:            $border-radius !default;
-$dropdown-border-width:             $border-width !default;
+$dropdown-border-width:             0 !default;
 $dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width) !default;
 $dropdown-divider-bg:               $dropdown-border-color !default;
 $dropdown-divider-margin-y:         $spacer * .5 !default;
-$dropdown-box-shadow:               $box-shadow !default;
+$dropdown-box-shadow:               0 0 15px 0 rgba(154, 161, 171, .35) !default;
 
 $dropdown-link-color:               $gray-700 !default;
 $dropdown-link-hover-color:         $gray-900 !default;
-$dropdown-link-hover-bg:            $gray-100 !default;
+$dropdown-link-hover-bg:            $blue-100 !default;
 
 $dropdown-link-active-color:        $component-active-color !default;
 $dropdown-link-active-bg:           $component-active-bg !default;
-
 $dropdown-link-disabled-color:      $gray-500 !default;
 
-$dropdown-item-padding-y:           $spacer * .375 !default;
-$dropdown-item-padding-x:           $spacer * 1.5 !default;
+$dropdown-item-padding-y:           $spacer * .5 !default;
+$dropdown-item-padding-x:           $spacer !default;
 
 $dropdown-header-color:             $gray-600 !default;
 $dropdown-header-padding-x:         $dropdown-item-padding-x !default;
@@ -1482,12 +1548,12 @@ $placeholder-opacity-min:           .2 !default;
 $card-spacer-y:                     $spacer * 1.5 !default;
 $card-spacer-x:                     $spacer * 1.5 !default;
 $card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
+$card-border-width:                 0 !default;
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius:                $border-radius !default;
 $card-box-shadow:                   $box-shadow !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
-$card-cap-padding-y:                $card-spacer-y * .5 !default;
+$card-cap-padding-y:                $card-spacer-y !default;
 $card-cap-padding-x:                $card-spacer-x !default;
 $card-cap-bg:                       $white !default;
 $card-cap-color:                    null !default;
@@ -1879,3 +1945,5 @@ $kbd-bg:                            var(--#{$prefix}body-color) !default;
 $nested-kbd-font-weight:            null !default; // Deprecated in v5.2.0, removing in v6
 
 $pre-color:                         null !default;
+
+$bi-margin:                         $font-size-base * .5 !default;

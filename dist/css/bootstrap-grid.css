@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --stument-scot: #2C405A;
   --stument-slate: #64748b;
   --stument-zinc: #71717a;
   --stument-neutral: #737373;
@@ -37,7 +38,7 @@
   --stument-gray-700: #6c757d;
   --stument-gray-800: #343a40;
   --stument-gray-900: #313a46;
-  --stument-primary: #727cf5;
+  --stument-primary: #2c8ef8;
   --stument-secondary: #6c757d;
   --stument-success: #0acf97;
   --stument-info: #6b5eae;
@@ -54,7 +55,7 @@
   --stument-amber: #f59e0b;
   --stument-emerald: #10b981;
   --stument-neutral: #737373;
-  --stument-primary-rgb: 114, 124, 245;
+  --stument-primary-rgb: 44, 142, 248;
   --stument-secondary-rgb: 108, 117, 125;
   --stument-success-rgb: 10, 207, 151;
   --stument-info-rgb: 107, 94, 174;
@@ -96,8 +97,8 @@
   --stument-border-radius-2xl: 2rem;
   --stument-border-radius-pill: 50rem;
   --stument-heading-color: ;
-  --stument-link-color: #727cf5;
-  --stument-link-hover-color: #5b63c4;
+  --stument-link-color: #2c8ef8;
+  --stument-link-hover-color: #2372c6;
   --stument-code-color: #ff679b;
   --stument-highlight-bg: #fff2cc;
 }
