@@ -17,15 +17,30 @@ Cards are built with as little markup and styles as possible, but still manage t
 Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they'll naturally fill the full width of its parent element. This is easily customized with our various [sizing options](#sizing).
 
 {{< example >}}
-<div class="card" style="width: 18rem;">
-  {{< placeholder width="100%" height="180" class="card-img-top" text="Image cap" >}}
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      {{< placeholder width="100%" height="180" class="card-img-top" text="Image cap" >}}
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h4 class="card-title">Application Build Tool</h4>
+        <div class="mt-2">
+          <span class="badge text-bg-primary">PHP</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{< /example >}}
+
 
 ## Content types
 

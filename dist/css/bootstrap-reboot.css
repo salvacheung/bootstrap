@@ -6,7 +6,7 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 :root {
-  --stument-scot: #2C405A;
+  --stument-scot: #2c405a;
   --stument-slate: #64748b;
   --stument-zinc: #71717a;
   --stument-neutral: #737373;
@@ -92,8 +92,8 @@
   --stument-border-color: #dee2e6;
   --stument-border-color-translucent: rgba(0, 0, 0, 0.125);
   --stument-border-radius: 0.15rem;
-  --stument-border-radius-sm: 0.15rem;
-  --stument-border-radius-lg: 0.15rem;
+  --stument-border-radius-sm: 0.45rem;
+  --stument-border-radius-lg: 0.75rem;
   --stument-border-radius-xl: 1rem;
   --stument-border-radius-2xl: 2rem;
   --stument-border-radius-pill: 50rem;
@@ -301,7 +301,7 @@ kbd {
   font-size: 0.875em;
   color: var(--stument-body-bg);
   background-color: var(--stument-body-color);
-  border-radius: 0.15rem;
+  border-radius: 0.45rem;
 }
 kbd kbd {
   padding: 0;

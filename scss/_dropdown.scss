@@ -181,9 +181,9 @@
   text-align: inherit; // For `<button>`s
   text-decoration: if($link-decoration == none, null, none);
   white-space: nowrap; // prevent links from randomly breaking onto new lines
+  cursor: pointer;
   background-color: transparent; // For `<button>`s
   border: 0; // For `<button>`s
-  cursor: pointer;
 
   &:hover,
   &:focus {

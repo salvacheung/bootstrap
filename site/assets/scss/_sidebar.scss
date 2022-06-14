@@ -44,7 +44,7 @@
   &.active {
     color: rgba($black, .85);
     text-decoration: if($link-hover-decoration == underline, none, null);
-    background-color: rgba(var(--bd-violet-rgb), .1);
+    background-color: rgba(var(--bd-purple-rgb), .1);
   }
 
   &.active {

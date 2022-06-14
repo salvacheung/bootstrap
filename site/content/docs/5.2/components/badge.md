@@ -1,19 +1,19 @@
 ---
 layout: docs
-title: Badges
-description: Documentation and examples for badges, our small count and labeling component.
+title: 徽章
+description: 文档与案例
 group: components
 toc: true
 ---
 
-## Examples
+## 案例
 
-Badges scale to match the size of the immediate parent element by using relative font sizing and `em` units. As of v5, badges no longer have focus or hover styles for links.
+徽章通过使用相对字体大小和 `em` 单位来缩放以匹配直接父元素的大小。从 v5 开始，徽章不再具有链接的焦点或悬停样式。
 
-### Headings
+### 标题
 
 {{< example >}}
-<h1>Example heading <span class="badge bg-secondary">New</span></h1>
+<h1>Example 威威 heading <span class="badge bg-secondary">New</span></h1>
 <h2>Example heading <span class="badge bg-secondary">New</span></h2>
 <h3>Example heading <span class="badge bg-secondary">New</span></h3>
 <h4>Example heading <span class="badge bg-secondary">New</span></h4>
@@ -21,9 +21,7 @@ Badges scale to match the size of the immediate parent element by using relative
 <h6>Example heading <span class="badge bg-secondary">New</span></h6>
 {{< /example >}}
 
-### Buttons
-
-Badges can be used as part of links or buttons to provide a counter.
+### 按钮
 
 {{< example >}}
 <button type="button" class="btn btn-primary">
@@ -31,13 +29,7 @@ Badges can be used as part of links or buttons to provide a counter.
 </button>
 {{< /example >}}
 
-Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button.
-
-Unless the context is clear (as with the "Notifications" example, where it is understood that the "4" is the number of notifications), consider including additional context with a visually hidden piece of additional text.
-
-### Positioned
-
-Use utilities to modify a `.badge` and position it in the corner of a link or button.
+### 定位
 
 {{< example >}}
 <button type="button" class="btn btn-primary position-relative">
@@ -49,7 +41,6 @@ Use utilities to modify a `.badge` and position it in the corner of a link or bu
 </button>
 {{< /example >}}
 
-You can also replace the `.badge` class with a few more utilities without a count for a more generic indicator.
 
 {{< example >}}
 <button type="button" class="btn btn-primary position-relative">
@@ -60,11 +51,10 @@ You can also replace the `.badge` class with a few more utilities without a coun
 </button>
 {{< /example >}}
 
-## Background colors
+## 背景颜色
 
 {{< added-in "5.2.0" >}}
 
-Set a `background-color` with contrasting foreground `color` with [our `.text-bg-{color}` helpers]({{< docsref "helpers/color-background" >}}). Previously it was required to manually pair your choice of [`.text-{color}`]({{< docsref "/utilities/colors" >}}) and [`.bg-{color}`]({{< docsref "/utilities/background" >}}) utilities for styling, which you still may use if you prefer.
 
 {{< example >}}
 {{< badge.inline >}}
@@ -73,18 +63,25 @@ Set a `background-color` with contrasting foreground `color` with [our `.text-bg
 {{< /badge.inline >}}
 {{< /example >}}
 
-{{< callout info >}}
-{{< partial "callout-warning-color-assistive-technologies.md" >}}
-{{< /callout >}}
-
-## Pill badges
-
-Use the `.rounded-pill` utility class to make badges more rounded with a larger `border-radius`.
+## 药丸徽章
 
 {{< example >}}
 {{< badge.inline >}}
 {{- range (index $.Site.Data "theme-colors") }}
 <span class="badge rounded-pill text-bg-{{ .name }}">{{ .name | title }}</span>{{- end -}}
+{{< /badge.inline >}}
+{{< /example >}}
+
+## 徽章组
+
+{{< example >}}
+{{< badge.inline >}}
+{{- range (index $.Site.Data "theme-colors") }}
+<span class="badge">{{ .name | title }}</span>
+<span class="badge-group">
+  <span class="badge text-bg-{{ .name }}">{{ .name | title }}</span>
+  <span class="badge text-bg-red-200">徽章</span>
+</span>{{- end -}}
 {{< /badge.inline >}}
 {{< /example >}}
 

@@ -2,6 +2,7 @@
 # The logic for the sidebar generation is in "site/layouts/partials/docs-sidebar.html".
 
 - title: Getting started
+  name: 快速开始
   icon: book-half
   icon_color: indigo
   pages:
