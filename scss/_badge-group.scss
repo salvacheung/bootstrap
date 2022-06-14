@@ -1,0 +1,12 @@
+.badge-group{
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+
+  > .badge:not(:last-child):first-child {
+    @include border-end-radius(0);
+  }
+  > .badge:not(:first-child):last-child {
+    @include border-start-radius(0);
+  }
+}

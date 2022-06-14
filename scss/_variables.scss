@@ -900,7 +900,7 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        700 !default;
@@ -1418,7 +1418,7 @@ $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 $navbar-dark-color:                 rgba($white, .85) !default;
 $navbar-dark-hover-color:           rgba($white, 1) !default;
 $navbar-dark-active-color:          $white !default;
-$navbar-dark-active-bg-color:       rgba($white, .1) !default;
+$navbar-dark-active-bg-color:       rgba($white, .2) !default;
 $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
